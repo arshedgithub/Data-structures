@@ -54,7 +54,12 @@ public class Stack {
     }
 
     public int peak(){
-        
+         if (isEmpty()) {
+            System.out.println("UnderFlow Error - stack is empty");
+            return -1;
+        } else {
+            return data[tos];
+        }
     }
 
     public void printAll(){}
