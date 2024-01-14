@@ -66,8 +66,8 @@ public class Stack {
         if (isEmpty()) {
             System.out.println("UnderFlow Error - Stack is empty");
         } else {
-            for (int i = tos; i <= 0; i--) {
-                System.out.print(data[i] + "\t");
+            for(int i = tos; i >= 0; i--) {
+                System.out.print(data[i] + " ");
             }
         }
     }
