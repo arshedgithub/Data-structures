@@ -62,6 +62,14 @@ public class Stack {
         }
     }
 
-    public void printAll(){}
+    public void printAll(){
+        if (isEmpty()) {
+            System.out.println("UnderFlow Error - Stack is empty");
+        } else {
+            for (int i = tos; i <= 0; i--) {
+                System.out.print(data[i] + "\t");
+            }
+        }
+    }
 
 }

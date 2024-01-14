@@ -11,7 +11,12 @@ public class Main {
         stack.push(30);
         System.out.println(stack.pop());
         System.out.println(stack.peak());
+        stack.printAll();
         System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.isEmpty());
+        stack.printAll();
+
 
     }
     
