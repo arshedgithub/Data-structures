@@ -105,7 +105,40 @@ public class SinglyLinkedList {
         if(isEmpty()){
             System.out.println("List is empty");
         } else {
-            // SinglyNode pre
+            SinglyNode current, prev = null;
+            for (current = this.head; current != null; current = current.next) {
+                if (current.value == val) {
+                    break;
+                }
+                prev = current;
+            }
+            if (current != null) {
+                prev.next = current.next;
+            }
+        }
+    }
+
+    public void deleteFromHead(){
+        if(isEmpty()){
+            System.out.println("UnderFlow Error - List is empty");
+        } else {
+            if (this.head == this.tail) {
+                this.head = this.tail = null;
+            } else {
+                this.head = this.head.next;
+            }
+        }
+    }
+
+    public void deleteFromTail(){
+        if(isEmpty()){
+            System.out.println("UnderFlow Error - List is empty");
+        } else {
+            if (this.head == this.tail) {
+                this.head = this.tail = null;
+            } else {
+                // this.tail = 
+            }
         }
     }
 

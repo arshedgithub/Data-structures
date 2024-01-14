@@ -12,7 +12,9 @@ public class Main {
         LL.addToTail(20);
 
         LL.addAfter(30, 45);
-
+        LL.delete(30);
+        LL.printAll();
+        LL.deleteFromHead();
         LL.printAll();
 
         // System.out.println(x);
